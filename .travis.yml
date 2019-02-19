@@ -17,3 +17,6 @@ python:
   - "pypy3.6"
 script:
   - python setup.py -q install
+  - cd test
+  - wget -q https://freemusicarchive.org/music/download/45f5d100d4eb6f231751fb75a97380c1efde4b03 -O skate.mp3
+  - mp3chaps -i skate.mp3
